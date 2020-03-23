@@ -1,31 +1,64 @@
 ﻿@{
-    ViewBag.Title = "Coding Experts";
+    Layout = null;
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Bigup</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/CSS/Home.css" />
+    <meta charset="utf-8" />
+    <title>dmuBlogger | A game review portal</title>
+</head>
+<body>
+    <div class="Contents">
+        <header>
+            <div class="BannerNavigationContainer">
+            </div>
+            <div class="KeypadLogoBanner"> </div>
+            <nav class="Navigation">
+                <button class="SelectedButton">Home</button>
+                <form action="~/Home/Contact">
+                    <button type="submit">Contact</button>
+                </form>
+                <form action="~/Account/Register">
+                    <button type="submit">Register</button>
+                </form>
+                <button>Login</button>
+            </nav>
+        </header>
+        <section>
+            <div class="Welcome">
+                <p>Welcome to dmuBlogger</p>
+            </div>
+            <div class="Message">
+                <p>
+                    The number one website for those gamers who want to know more about what others think of the different games out there.
+                </p>
+            </div>
+            <div class="flexOrder">
+                <div class="firstColumn">
+                    <p>Puzzle Games</p>
+                    <p>Trivia</p>
+                    <p>Combat Games</p>
+                    <p>Kids Games</p>
+                </div>
+                <div class="secondColumn">
+                    <p>Role Playing Games</p>
+                    <div class="TextLogo"></div>
+                    <p>Board Games</p>
+                </div>
+                <div class="thirdColumn">
+                    <p>Racing Games</p>
+                    <p>18+ Games</p>
+                    <p>Platform Games</p>
+                    <p>Card Games</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="FooterText">
+                dmuBlogger © 2020, Team SampleText
+            </div>
+        </footer>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</body>
+</html>
