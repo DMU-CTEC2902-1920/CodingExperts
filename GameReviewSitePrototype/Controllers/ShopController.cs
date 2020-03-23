@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using GameReviewSitePrototype.Models;
 
 namespace GameReviewSitePrototype.Controllers
 {
@@ -17,11 +18,15 @@ namespace GameReviewSitePrototype.Controllers
             return View(); 
         }
 
-        public string Product(int id)
+        public ViewResult Games()
         {
-            return "Product: Id = " + id.ToString();
-        }
+            GamesModel gamesModel = new GamesModel();
+            gamesModel.GameName = "GTA V";
+            gamesModel.GameDescription = "Very good game";
+            gamesModel.Price = 350.00M;
 
+            return View(gamesModel);
+        }
         public RedirectResult GameCD()
         {
             return Redirect("~/Shop/Product");
