@@ -7,6 +7,8 @@ namespace GameReviewSitePrototype.Models
 {
     public class GamesModel
     {
+       
+        public string GameID { get; set; }
         public string GameName { get; set; }
         public string GameDescription { get; set; }
         public decimal Price { get; set; }

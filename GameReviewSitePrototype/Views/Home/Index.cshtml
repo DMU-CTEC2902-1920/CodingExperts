@@ -1,37 +1,23 @@
-﻿@{
-    Layout = null;
+﻿<!--add the shared layout for the menu-->
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
 }
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="~/Content/CSS/Home.css" />
     <meta charset="utf-8" />
-    <title>dmuBlogger | A game review portal</title>
+    <title>GAME.Reviews | No.1 Platform for game reviews</title>
 </head>
 <body>
     <div class="Contents">
-        <header>
-            <div class="BannerNavigationContainer">
-            </div>
-            <div class="KeypadLogoBanner"> </div>
-            <nav class="Navigation">
-                <button class="SelectedButton">Home</button>
-                <form action="~/Home/Contact">
-                    <button type="submit">Contact</button>
-                </form>
-                <form action="~/Account/Register">
-                    <button type="submit">Register</button>
-                </form>
-                <button>Login</button>
-            </nav>
-        </header>
         <section>
-            <div class="Welcome">
-                <p>Welcome to dmuBlogger</p>
+            <div class="Header">
+                <h1>Welcome to GAME.Reviews</h1>
             </div>
             <div class="Message">
                 <p>
-                    The number one website for those gamers who want to know more about what others think of the different games out there.
+                    Everyones got an opinion. Share Yours NOW on the No.1 platform for game reviews.
                 </p>
             </div>
             <div class="flexOrder">
@@ -55,9 +41,7 @@
             </div>
         </section>
         <footer>
-            <div class="FooterText">
-                dmuBlogger © 2020, Team SampleText
-            </div>
+        
         </footer>
     </div>
 </body>
