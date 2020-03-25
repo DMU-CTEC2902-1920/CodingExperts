@@ -1,7 +1,7 @@
 ﻿@model GameReviewSitePrototype.Models.Games
 
 @{
-    Layout = null;
+    Layout = "/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -19,19 +19,25 @@
             <dt>
                 @Html.DisplayNameFor(model => model.GameName)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.GameName)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.GameActive)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.GameActive)
             </dd>
-    
+            <dt>
+                @Html.DisplayNameFor(model => model.GameDescription)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GameDescription)
+            </dd>
         </dl>
     </div>
     <p>

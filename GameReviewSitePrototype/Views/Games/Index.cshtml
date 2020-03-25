@@ -23,6 +23,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.GameActive)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameDescription)
+            </th>
             <th></th>
         </tr>
     
@@ -35,9 +38,13 @@
                 @Html.DisplayFor(modelItem => item.GameActive)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.GameID }) |
-                @Html.ActionLink("Details", "Details", new { id=item.GameID }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.GameID })
+                @Html.DisplayFor(modelItem => item.GameDescription)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.GameID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.GameID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.GameID })
+
             </td>
         </tr>
     }

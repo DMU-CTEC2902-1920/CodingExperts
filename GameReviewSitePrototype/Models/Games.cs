@@ -18,5 +18,6 @@ namespace GameReviewSitePrototype.Models
        // public virtual DateTime GameReleaseDate { get; set;}
         //var for Game Active
         public virtual Boolean GameActive { get; set; }
+        public virtual string GameDescription { get; set; }
     }
 }
