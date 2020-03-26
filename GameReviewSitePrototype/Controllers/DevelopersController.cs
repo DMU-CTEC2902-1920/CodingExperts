@@ -13,21 +13,29 @@ namespace GameReviewSitePrototype.Controllers
 {
     public class DevelopersController : Controller
     {
+        //creates a new list of developers
         private readonly List<Developer> _developer = new List<Developer>()
         {
+            //assign the record number
             new Developer {DeveloperID = 1,
+            //adding name
             DeveloperName = "Activision",
+            //adding description
             DeveloperDescription = "Experts in first shooter games, produced a lot of titles such as :" +
                 "   Call Of Duty " },
 
-
+            //assign the record number
             new Developer {DeveloperID = 2,
+            //adding name
             DeveloperName = "EA",
+            //adding description
             DeveloperDescription = "Produced a lot of sporting games, they released titles such as :" +
                 "    Fifa 20 "},
-            
+            //assign the record number
             new Developer {DeveloperID = 3,
+            //adding name
             DeveloperName = "Valve",
+            //adding description
             DeveloperDescription = "Prouced a lot of fps shooter titles, their biggest titles include : " +
                 "    Half-Life"}
         };
@@ -37,6 +45,7 @@ namespace GameReviewSitePrototype.Controllers
         // GET: Developers
         public ActionResult Index()
         {
+            //index page responsible of passing data to the presentation layer
             return View(_developer);
         }
 

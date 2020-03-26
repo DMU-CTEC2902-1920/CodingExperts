@@ -1,9 +1,18 @@
 ﻿@model GameReviewSitePrototype.Models.Developer
+    @*allows the systsm to focus on developer model*@
 
 @{
     ViewBag.Title = "Developers";
 }
-
+@*Display Developer Name*@
+<br />
 <h2>@Model.DeveloperName</h2>
+@*Display Developer Discription*@
+<br />
 <h3>@Model.DeveloperDescription</h3>
+@*Reference to the reviews page where the user can find the games produced*@
+<a href="~/Reviews">View the reviews of games produced</a>
+<br />
+<h4></h4>
+
 <p><p>
