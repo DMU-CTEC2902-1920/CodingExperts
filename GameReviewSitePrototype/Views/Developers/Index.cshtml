@@ -1,0 +1,15 @@
+﻿@model List<GameReviewSitePrototype.Models.Developer>
+
+@{
+    ViewBag.Title = "Index";
+}
+<body>
+    <h2> All Developers</h2>
+    <ul>
+        @foreach (var developer in @Model)
+        {   
+        <li><a href="~/Developers/Details/@developer.DeveloperID">@developer.DeveloperName</a></li>
+        }
+    </ul>
+</body>
+
