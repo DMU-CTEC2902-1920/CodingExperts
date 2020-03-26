@@ -12,6 +12,7 @@ namespace GameReviewSitePrototype.Models
         //primary key gameid var
         [Key]
         public virtual int GameID { get; set; }
+        public virtual int DeveloperID { get; set; }
         //var for GameName
         public virtual string GameName { get; set; }
         //var for ReleaseDate
